@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="listener" />
+        <module name="ReceiverLogic" />
+        <module name="Logic" />
+        <module name="Log" />
+        <module name="SpeedReceiver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LogConsumer" target="11" />
+      <module name="ReceiverLogic" target="11" />
+      <module name="ReceiverSpeed" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Log" options="-parameters" />
+      <module name="LogConsumer" options="-parameters" />
+      <module name="Logic" options="-parameters" />
+      <module name="ReceiverLogic" options="-parameters" />
+      <module name="ReceiverSpeed" options="-parameters" />
+      <module name="SpeedReceiver" options="-parameters" />
+    </option>
+  </component>
+</project>
